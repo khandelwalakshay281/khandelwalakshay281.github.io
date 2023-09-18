@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="keywords" content="Akshay, Akshay Khandelwal, Akshay Khandelwal, Home Akshay, Akshay Khandelwal NITT, Akshay Khandelwal nitt, Aaken10, Aaken10 github, Akshay Khandelwal github, Akshay Khandelwal github io, Aaken10.github.io, Aaken10 github io">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="icon" href="/assets/logo1.png">
+    <title> Home : Akshay Khandelwal </title>
+    <meta name="description" content="Hi there! I'm Akshay Khandelwal, currently pursuing my bachelor's in Electrical & Electronics Engineering at National Institute of Technology (NITT)">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home : Akshay Khandelwal">
+    <meta property="og:url" content="https://ajeph2020.github.io/">
+    <link property="og:image" content="https://ajeph2020.github.io/assets/output-onlinepngtools.png">
+    <meta property="og:description" content="Hi there! I'm Akshay Khandelwal, currently pursuing my bachelor's in Electrical & Electronics Engineering at National Institute of Technology (NITT)">
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:title" content="Home : Akshay Khandelwal">
+    <meta name="twitter:description" content="Hi there! I'm Akshay Khandelwal, currently pursuing my bachelor's in Electrical & Electronics Engineering at National Institute of Technology (NITT)">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+                            
+    <!-- including css -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="char.css">
+
+    <!-- including js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <section class="preLoader">
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+                <feColorMatrix values="
+                    1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 20 -10"></feColorMatrix>
+            </filter>
+        </svg>
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span class="rotate" style="--j:0;"></span>
+            <span class="rotate" style="--j:1;"></span>
+            <span class="rotate" style="--j:2;"></span>
+            <span class="rotate" style="--j:3;"></span>
+            <span class="rotate" style="--j:4;"></span>
+        </div>
+        <div class="loadFont">
+            <h1> Let's Go<h1 id="loadFontDot1">.</h1><h1 id="loadFontDot2">.</h1><h1 id="loadFontDot3">.</h1> </h1>
+        </div>
+    </section>
+
+    <canvas id="canvas1"></canvas>
+    <!-- <div id="large-header" class="large-header"> -->
+        <!-- <canvas id="demo-canvas"></canvas> -->
+
+
+    <section id="home" class="header">
+        <nav id="navBar">
+            <a href="#home">
+                <img id="logo" src="assets/logo1.png" alt="Home Logo"></a>
+            <div class="threeLine">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <a id="cross"><i class="fa-solid fa-circle-xmark"></i></a>
+                    <li><a id="Home" href="#home">Home</a></li>
+                    <li><a id="About" href="#about">About</a></li>
+                    <li><a id="Skills" href="#skills">Skills</a></li>
+                    <li><a id="Projects" href="#projects">Projects</a></li>
+                    <li><a id="Photography" href="#photos">Books</a></li>
+                    <li><a id="Contact" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="border-circle" id="one"></div>
+            <div class="border-circle" id="two"></div>
+            <div class="background-circle">
+              <div class="triangle-light"></div>
+              <div class="body"></div>
+              <span class="shirt-text">A</span>
+              <span class="shirt-text">K</span>
+              <span class="shirt-text">S</span>
+              <span class="shirt-text">H</span>
+              <span class="shirt-text">A</span>
+              <span class="shirt-text">Y</span>
+              <div class="triangle-dark"></div>
+            </div>
+            <div class="head">
+              <div class="ear" id="left"></div>
+              <div class="ear" id="right"></div>
+              <div class="hair-main">
+                <div class="sideburn" id="left"></div>
+                <div class="sideburn" id="right"></div>
+                <div class="hair-top"></div>
+              </div>
+              <div class="face">
+                <div class="hair-bottom"></div>
+                <div class="nose"></div>
+                <div class="eye-shadow" id="left">
+                  <div class="eyebrow"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="eye-shadow" id="right">
+                  <div class="eyebrow"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+                <div class="shadow-wrapper">
+                  <div class="shadow"></div>
+                </div>
+              </div>
+            </div>
+            <span class="music-note" id="one">&#9835;</span>
+            <span class="music-note" id="two">&#9834;</span>
+          </div>
+
+        <div class="textBox">
+            <h1 class="auto_type_curser"> <span class="auto_type"></span> </h1>
+            <div class="frontText">
+                <h2> I'm <strong>Akshay Khandelwal</strong> </h2>
+                <hr>
+                <p> A final year student pursuing Bachelor's in <a href="https://www.nitt.edu/home/academics/departments/eee/" target="_blank">Electrical and 
+                        Electronics Engineering</a> from <a href="https://www.nitt.edu/" target="_blank">NIT Trichy</a>.</p>
+            </div>
+        </div>
+
+        <div class="linkBox">
+            <a class="linkedIn" href="https://www.linkedin.com/in/akshay-khandelwal-28901/" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-3x"></i></a>
+            <a class="gitHub" href="https://github.com/khandelwalakshay281" target="_blank"><i
+                    class="fa-brands fa-github fa-3x"></i></a>
+            <a class="insta" href="https://www.instagram.com/akshay_khandelwal281/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-3x"></i></a>
+            <a class="youTube" href="https://x.com/AkshayK86925391?t=KD3NAq56e1hqNcQr4aaNhA&s=08" target="_blank"><i
+                    class="fa-brands fa-twitter fa-3x"></i></a>
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <div class="textBox1">
+            <h1 data-aos="zoom-in">
+                About Me
+            </h1>
+            <b data-aos="zoom-in"> I'm a 21 year old tech enthusiast, programmer and front-end developer who is pursuing Bachelor's in Electrical and Electronics Engineering at National Institue of Technology, Tiruchirapalli. 
+                <br> I am passionate about Web Dev, Machine Learning and AI & enjoy exploring and learning new things. <br> <br> Apart from programming, I am always looking for great recommendations and generate some ideas of my own. I love playing Badminton, Basketball and table tennis and also love listening to all types of music and singing as well. </b>
+
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+
+        <div class="textBoxBlack">
+            <h1 data-aos="zoom-in">
+                Skills
+            </h1>
+        </div>
+
+        <canvas id="gameCanvas" width="5000" height="2000" data-aos="zoom-in">
+        </canvas>
+
+    </section>
+
+    <section id="projects" class="projects">
+
+        <div class="textBoxProject">
+            <h1 data-aos="zoom-in">
+                Projects
+            </h1>
+        </div>
+        <div class="pColumn">
+
+            <div class="pRow" data-aos="fade-right">
+                <div class="pImg">
+                    <img src="assets/wordle.png" alt="p1">
+                </div>
+                <div class="pText">
+                    <h3> Wordle Clone | HTML, CSS, ReactJS </h3>
+                    <h5> June 2023 </h5>
+                    <p> Created a Wordle clone, a word puzzle game inspired by the popular online word game Wordle. 
+                        Implemented the project using HTML, CSS, and ReactJS, allowing users to guess a five-letter word 
+                        within six attempts. Users receive feedback on their guesses and can play the game interactively on 
+                        the web browser. </p>
+                </div>
+                <div class="activeGitHub">
+                    <a href="https://github.com/khandelwalakshay281/Wordle-Clone"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="pRow" data-aos="fade-right">
+                <div class="pImg">
+                    <img src="assets/realtimechat.png" alt="p1">
+                </div>
+                <div class="pText">
+                    <h3> Realtime Chat Application | Socket.io, Bootstrap </h3>
+                    <h5> Jan 2023 </h5>
+                    <p> Developed a Realtime Chat application using Socket.IO and Bootstrap to enable seamless and 
+                        instantaneous communication between multiple users. The application allows users to exchange text 
+                        messages in real time without the need for page reloads or manual refreshing </p>
+                </div>
+                <div class="activeGitHub">
+                    <a href="https://github.com/Aaken10/GoG"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="pRow" data-aos="fade-right">
+                <div class="pImg">
+                    <img src="assets/iDino.png" alt="p3">
+                </div>
+                <div class="pText">
+                    <h3> iDino Game | VanillaJS</h3>
+                    <h5> April 2022 </h5>
+                    <p> Designed and developed iDino, an interactive animation game created entirely using VanillaJS. The 
+                        game draws inspiration from the classic Google Chrome dinosaur game and allows users to control a 
+                        dinosaur in an endless animated obstacle course, providing an entertaining experience.
+                        </a>. </p>
+                </div>
+                <div class="activeGitHub">
+                    <a href="https://github.com/Aaken10/Transmisssion-And-Distribution-of-Electrical-Energy-Project" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="pRow" data-aos="fade-right">
+                <div class="pImg">
+                    <img src="assets/contestcalendar.png" alt="p4">
+                </div>
+                <div class="pText">
+                    <h3> Contest Calendar | HTML, CSS, JavaScript </h3>
+                    <h5> October 2022 </h5>
+                    <p> Developed a Chrome Extension using HTML, CSS, and JavaScript to provide real-time updates on
+                        coding contests from 8 popular platforms such as GFG, Codechef, Codeforces, Leetcode etc.
+                        Integrated the CLIST API to fetch and display contest information, ensuring users never miss
+                        important coding competitions. Implemented a notification feature by clicking on which the user will
+                        get redirected to the coding website 1 minute before the contest starts. </p>
+                </div>
+                <div class="activeGitHub">
+                    <a href="https://github.com/Aaken10/Generating-Multi-Component-Sinusoidal-sequence"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="pRow" data-aos="fade-right">
+                <div class="pImg">
+                    <img src="assets/portfolioo.png" alt="p7">
+                </div>
+                <div class="pText">
+                    <h3> And what you are seeing right now is my portfolio :) | HTML, CSS, JS </h3>
+                    <h5> Dec 2022 </h5>
+                    <p> A personal portfolio front-end webpage created using pure HTML, CSS and JavaScript. </p>
+                </div>
+                <div class="activeGitHub">
+                    <a href="https://github.com/khandelwalakshay281/Portfolio"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="collab" data-aos="zoom-in">
+            <p>Liked It? Want to connect? 🤝 <br> Just drop an email or a message on any of my social networks. </p>
+        </div>
+
+    </section>
+
+    <section id="photos" class="photography">
+        <div class="pTextBox">
+            <h1 data-aos="zoom-in">
+                Books
+            </h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1591954433i/53972440.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book03.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book04.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book05.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book06.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book07.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book08.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book09.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book01.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book11.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book13.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book12.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book14.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book15.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book16.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book17.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book18.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book19.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book20.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book25.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book26.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book27.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book28.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book29.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book30.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book31.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book32.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book33.jpg" alt=""></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book34.jpg" alt=""></li>
+              </ul>
+            </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <h1 data-aos="zoom-in">Contact Info</h1>
+
+        <div class="contacts" data-aos="zoom-in">
+            <a class="hostel" href="https://goo.gl/maps/EG1RrEvNggYQBSUk6" target="_blank"><i
+                    class="fa-solid fa-location-dot fa-6x"></i> <br> Jaipur,Rajasthan </a>
+            <a class="webMail" href="mailto:107120011@nitt.edu"><i class="fa-solid fa-at fa-6x"></i> <br>
+                107120011@nitt.edu</a>
+            <a class="gMail" href="mailto:Akshayagarwal2002@gmail.com" target="_blank"><i
+                    class="fa-brands fa-google fa-6x"></i> <br>akshaykhandelwal281@gmail.com </a>
+        </div>
+
+        <div class="footerIcons">
+            <a class="linkedIn" href="https://www.linkedin.com/in/akshay-khandelwal-28901/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-3x"></i></a>
+        <a class="gitHub" href="https://github.com/khandelwalakshay281" target="_blank"><i
+                class="fa-brands fa-github fa-3x"></i></a>
+        <a class="insta" href="https://www.instagram.com/akshay_khandelwal281/" target="_blank"><i
+                class="fa-brands fa-instagram fa-3x"></i></a>
+        <a class="youTube" href="https://x.com/AkshayK86925391?t=KD3NAq56e1hqNcQr4aaNhA&s=081" target="_blank"><i
+                class="fa-brands fa-twitter fa-3x"></i></a>
+        </div>
+        <hr>
+        <div class="copyrightDiv">
+            <p class="copyright"> © Copyright 2022 Akshay Khandelwal. <br> All Rights Reserved. </y>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="home.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            loop: true,
+
+            autoHeight: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //   el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 200, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/43164ccb79.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto_type", {
+            strings: ["A Tech Savvy!", "A Melophile!", "A Bibliognost!", "A Learner Always!"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
